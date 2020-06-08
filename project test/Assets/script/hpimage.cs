@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class hpimage : MonoBehaviour
 {
-    private CanvasGroup img;
+    public Image img;
     public float hpmax,hpreg,hitdamage;
     float hpupimg;
     bool hpholdimg;
     void Start()
     {
-        img = GetComponent<CanvasGroup>();
+       
     }
 
     IEnumerator hpdel()
