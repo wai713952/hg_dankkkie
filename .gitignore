@@ -98,3 +98,5 @@ model/uv texture/goose/goose psd.psd
 artwork/map/art map/map ps.psd
 model/uv ps texture save/scene 1-2.psd
 model/uv ps texture save/scene 1-2.psd
+model/uv texture scene/save/scene 2 texture.psd
+model/uv texture scene/save/scene 2 texture.psd
