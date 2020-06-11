@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class RevolverDamage : MonoBehaviour
 {
+    public GameObject enemy ;
 [SerializeField] float enemyhp = 6;
 [SerializeField] public float enemyhitforceback;
 [SerializeField] public float enemyhitforceup;
-void OnTriggerStay(Collider bullet) 
+void OnTriggerEnter(Collider bullet) 
     {
         if(bullet.gameObject.name == "bulletline")
             {
-                if(Input.GetKeyDown(KeyCode.Mouse0) && Revolvershoot.ammo > 0)
+                if(Revolvershoot.shoot==true)
                 {
-                    GetComponent<Rigidbody>().AddForce(-transform.forward * enemyhitforceback);
+                   enemy.GetComponent<Rigidbody>().AddForce(-transform.forward * enemyhitforceback);
                     GetComponent<Rigidbody>().AddForce(transform.up * enemyhitforceup);
 
                     enemyhp--;
