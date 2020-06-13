@@ -7,7 +7,7 @@ public class damage : MonoBehaviour
 {
     public  Image image;
 
-    public Color tempColor;
+    private Color tempColor;
     
 
      
